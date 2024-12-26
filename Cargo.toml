@@ -1,0 +1,12 @@
+[package]
+name = "fftest"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+#ffmpeg = "0.3.0"
+opencv = { version = "0.93.5", features = ["dnn"]}
+#scap = "0.0.8"
+scap = { git = "https://github.com/clearlysid/scap",  branch = "patch-1" }
+tokio = { version = "1.42.0", features = ["macros", "rt-multi-thread"] }
+
